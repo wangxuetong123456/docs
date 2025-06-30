@@ -53,11 +53,8 @@
             ]
           },
           {
-            "group": "通用文档解析",
-            "openapi": {
-              "source": "/api-reference/pdf-to-markdown.json",
-              "directory": "api-reference"
-            }
+            "group": "智能文档抽取",
+            "pages": ["api-reference/endpoint/extract"]
           }
         ]
       }

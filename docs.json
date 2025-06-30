@@ -51,11 +51,29 @@
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
+          },
+          {
+            "group": "通用文档解析",
+            "openapi": {
+              "source": "/api-reference/pdf-to-markdown.json",
+              "directory": "api-reference"
+            }
           }
         ]
       }
     ],
     "global": {
+      "languages": [
+        {
+          "language": "cn",
+          "default": true,
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "language": "en",
+          "href": "https://mintlify.com/docs"
+        }
+      ],
       "anchors": [
         {
           "anchor": "Documentation",

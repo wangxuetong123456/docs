@@ -54,7 +54,9 @@
           },
           {
             "group": "智能文档抽取",
-            "pages": ["api-reference/endpoint/extract"]
+            "pages": [
+              "api-reference/endpoint/extract"
+            ]
           }
         ]
       }
@@ -112,6 +114,11 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "api": {
+    "playground": {
+      "proxy": false
     }
   }
 }

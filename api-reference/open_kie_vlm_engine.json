@@ -5,6 +5,17 @@
         "description": "智能文档抽取服务-API文档，老板要求该版本将自定义抽取与自动结构化抽取融合为一个接口，所以接口返回的数据结构比较冗余，看着挺费劲的是吧？",
         "version": "1.0.0"
     },
+    "servers": [
+        {
+            "url": "https://api.textin.com"
+        }
+    ],
+    "security": [
+        {
+            "AppIdAuth": [],
+            "SecretCodeAuth": []
+        }
+    ],
     "paths": {
         "/ai/service/v1/entity_extraction": {
             "post": {
@@ -60,8 +71,7 @@
                         "application/octet-stream": {
                             "schema": {
                                 "type": "string",
-                                "format": "binary",
-                                "example": ""
+                                "format": "binary"
                             }
                         }
                     }
@@ -89,6 +99,20 @@
         }
     },
     "components": {
+        "securitySchemes": {
+            "AppIdAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "x-ti-app-id",
+                "description": "请登录Textin后前往 \"工作台-账号设置-开发者信息\" 查看 x-ti-app-id"
+            },
+            "SecretCodeAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "x-ti-secret-code",
+                "description": "请登录Textin后前往 \"工作台-账号设置-开发者信息\" 查看 x-ti-secret-code"
+            }
+        },
         "schemas": {
             "CodeMessage": {
                 "type": "object",
